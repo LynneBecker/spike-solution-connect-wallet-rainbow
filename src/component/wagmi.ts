@@ -1,7 +1,11 @@
+'use client';
+
 import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 import {
   arbitrum,
+  arbitrumSepolia,
   base,
+  baseSepolia,
   mainnet,
   optimism,
   polygon,
@@ -17,6 +21,8 @@ export const config = getDefaultConfig({
     optimism,
     arbitrum,
     base,
+    baseSepolia,
+    arbitrumSepolia,
     ...(process.env.REACT_APP_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
 });
