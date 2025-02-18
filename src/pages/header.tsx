@@ -1,17 +1,13 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit"
 import React from "react"
+import "./header.css"
 
-
-const Header : React.FC = () => {
-
+const Header = () => {
     return (
-        <div
-            style={{
-                display: 'flex',
-                justifyContent: 'flex-end',
-                padding: 12,
-            }}
-        >
+        <div className="header-container">
+            <div className="header-logo">
+                MultiCall
+            </div>
             <ConnectButton />
         </div>
     )

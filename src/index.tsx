@@ -7,8 +7,8 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { WagmiProvider } from 'wagmi';
 import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
 
+import App from './App';
 import { config } from './component/wagmi';
-import Header from './pages/header';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -21,7 +21,7 @@ root.render(
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider>
-          <Header />
+          <App />
         </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>

@@ -2,6 +2,7 @@ import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 import {
   arbitrum,
   base,
+  holesky,
   mainnet,
   optimism,
   polygon,
@@ -17,6 +18,7 @@ export const config = getDefaultConfig({
     optimism,
     arbitrum,
     base,
+    holesky,
     ...(process.env.REACT_APP_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
 });
